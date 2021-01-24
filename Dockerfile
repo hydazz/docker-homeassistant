@@ -9,7 +9,7 @@ LABEL maintainer="hydaz"
 
 # environment settings
 ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
-    PYTHONPATH="/pip-packages:$PYTHONPATH"
+    PYTHONPATH="/pip-packages:$PYTHONPATH" \
     HOME="/config"
 
 # https://github.com/home-assistant/core/pull/43771

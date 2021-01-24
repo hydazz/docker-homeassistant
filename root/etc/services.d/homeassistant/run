@@ -2,6 +2,14 @@
 
 setcap 'cap_net_bind_service=+ep' /usr/bin/python3.8
 
-exec \
-	s6-setuidgid abc /usr/bin/hass \
+redirect_cmd() {
+	if [[ "${DEBUG}" == "true" ]]; then
+		"$@"
+	else
+		"$@" >/dev/null 2>&1
+	fi
+}
+
+echo "Starting Home Assistant."
+redirect_cmd exec s6-setuidgid abc /usr/bin/hass \
 	-c /config
