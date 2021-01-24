@@ -3,7 +3,6 @@ FROM vcxpz/baseimage-alpine
 # set version label
 ARG BUILD_DATE
 ARG VERSION
-ARG VERSION
 ARG HACS_RELEASE
 LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"

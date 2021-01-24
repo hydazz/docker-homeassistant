@@ -41,7 +41,7 @@ jobs:
       - name: Build And Push The Docker Image
         run: |
           docker buildx build \
-            --platform=linux/amd64,linux/arm64,linux/arm/v7 \
+            --platform=linux/amd64 \
             --output "type=image,push=true" \
             --build-arg TAG=edge \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
