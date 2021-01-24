@@ -5,7 +5,7 @@ name: Auto Release CI
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 0 * * 1-6"
+    - cron: "10 0 * * 1-6"
 
 jobs:
   check-for-updates:
@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
-          VERSION=HASS_RELEASE=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | jq -r .tag_name)
+          VERSION=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | jq -r .tag_name)
           OLD_VERSION=$(curl -sX GET "https://api.github.com/repos/hydazz/docker-homeassistant/releases/latest" | jq -r .tag_name)
           printf '{
                "tag_name": "'${VERSION}'",
