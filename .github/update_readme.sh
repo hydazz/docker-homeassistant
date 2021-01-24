@@ -10,7 +10,7 @@ Fork of [linuxserver/docker-homeassistant](https://github.com/linuxserver/docker
 
 ## Version Information
 
-![alpine](https://img.shields.io/badge/alpine-edge-0D597F?style=for-the-badge&logo=alpine-linux) ![hass](https://img.shields.io/badge/home_assistant-${APP_VERSION}-269539?style=for-the-badge&logo=nginx)
+![alpine](https://img.shields.io/badge/alpine-edge-0D597F?style=for-the-badge&logo=alpine-linux) ![hass](https://img.shields.io/badge/home_assistant-${APP_VERSION}-41BDF5?style=for-the-badge&logo=home-assistant)
 
 See [package_versions.txt](package_versions.txt) for a full list of the packages and package versions used in this image
 

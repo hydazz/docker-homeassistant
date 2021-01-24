@@ -10,9 +10,7 @@ LABEL maintainer="hydaz"
 # environment settings
 ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
     PYTHONPATH="/pip-packages:$PYTHONPATH"
-
-# copy local files
-COPY root/ /
+    HOME="/config"
 
 # https://github.com/home-assistant/core/pull/43771
 
@@ -86,8 +84,8 @@ RUN \
 	/tmp/* \
 	/root/.cache
 
-# environment settings. used so pip packages installed by home assistant installs in /config
-ENV HOME="/config"
+# copy local files
+COPY root/ /
 
 # ports and volumes
 EXPOSE 8123
