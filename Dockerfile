@@ -3,7 +3,7 @@ FROM vcxpz/baseimage-alpine
 # set version label
 ARG BUILD_DATE
 ARG VERSION
-ARG HASS_RELEASE
+ARG VERSION
 ARG HACS_RELEASE
 LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"
@@ -48,7 +48,7 @@ RUN \
 	/tmp/core && \
    curl -o \
 	/tmp/core.tar.gz -L \
-	"https://github.com/home-assistant/core/archive/${HASS_RELEASE}.tar.gz" && \
+	"https://github.com/home-assistant/core/archive/${VERSION}.tar.gz" && \
    tar xf \
 	/tmp/core.tar.gz -C \
 	/tmp/core --strip-components=1 && \
@@ -60,7 +60,7 @@ RUN \
 	pip==20.3 \
 	wheel && \
    pip install ${PIPFLAGS} \
-	homeassistant==${HASS_RELEASE} && \
+	homeassistant==${VERSION} && \
    cd /tmp/core && \
    pip install ${PIPFLAGS} \
 	-c /tmp/constraints_hass.txt \
