@@ -49,7 +49,7 @@ jobs:
       - name: Test The Docker Image
         run: |
           export IMAGE="vcxpz/ci-build:ci-build"
-          export TEST_SEARCH="Unable to find configuration"
+          export TEST_SEARCH="Creating default one in"
           export RUN_ARGS="-e DEBUG=true"
           curl -sSL https://raw.githubusercontent.com/hydazz/docker-utils/main/docker/docker-ci.sh | bash
 
