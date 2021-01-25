@@ -25,4 +25,18 @@ See [package_versions.txt](package_versions.txt) for a full list of the packages
       --restart unless-stopped \
       vcxpz/homeassistant
 
-**Read the official [README.md](https://github.com/linuxserver/docker-homeassistant/) for more information**
+[![template](https://img.shields.io/badge/unraid_template-ff8c2f?style=for-the-badge&logo=docker?color=d1aa67)](https://github.com/hydazz/docker-templates/blob/main/hydaz/homeassistant.xml)
+
+## New Environment Variables
+
+### Debug
+
+| Name    | Description                                                                                              | Default Value |
+| ------- | -------------------------------------------------------------------------------------------------------- | ------------- |
+| `DEBUG` | set `true` to display errors in the Docker logs. When set to `false` the Docker log is completely muted. | `false`       |
+
+**See other variables on the official [README](https://github.com/linuxserver/docker-homeassistant/)**
+
+## Upgrading Home Assistant
+
+To upgrade, all you have to do is pull our latest Docker image. We automatically check for Home Assistant updates daily so there may be some delay when an update is released to when the image is updated.
