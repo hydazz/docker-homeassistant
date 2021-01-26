@@ -41,4 +41,4 @@ See [package_versions.txt](package_versions.txt) for a full list of the packages
 
 ## Upgrading Home Assistant
 
-To upgrade, all you have to do is pull our latest Docker image. We automatically check for Home Assistant updates daily so there may be some delay when an update is released to when the image is updated." >README.md
+To upgrade, all you have to do is pull the latest Docker image. We automatically check for Home Assistant updates daily so there may be some delay when an update is released to when the image is updated." >README.md
