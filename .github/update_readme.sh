@@ -31,8 +31,6 @@ See [package_versions.txt](package_versions.txt) for a full list of the packages
 
 ## New Environment Variables
 
-### Debug
-
 | Name    | Description                                                                                              | Default Value |
 | ------- | -------------------------------------------------------------------------------------------------------- | ------------- |
 | \`DEBUG\` | set \`true\` to display errors in the Docker logs. When set to \`false\` the Docker log is completely muted. | \`false\`       |
