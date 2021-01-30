@@ -66,7 +66,7 @@ RUN \
 		-r requirements_test_all.txt && \
 	echo "**** install dependencies for hacs.xyz ****" && \
 	if [ -z ${HACS_RELEASE+x} ]; then \
-		HACS_RELEASE=$(curl -sX GET "https://api.github.com/repos/hacs/integration/releases/latest" |
+		HACS_RELEASE=$(curl -sX GET "https://api.github.com/repos/hacs/integration/releases/latest" | \
 			awk '/tag_name/{print $4;exit}' FS='[""]'); \
 	fi && \
 	mkdir -p \
