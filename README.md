@@ -32,3 +32,7 @@ Fork of [linuxserver/docker-homeassistant](https://github.com/linuxserver/docker
 ## Upgrading Home Assistant
 
 To upgrade, all you have to do is pull the latest Docker image. We automatically check for Home Assistant updates daily so there may be some delay when an update is released to when the image is updated.
+
+## Fixing Appdata Permissions
+
+If you ever accidentally screw up the permissions on the appdata folder, run fix-perms within the container. This will restore most of the files/folders with the correct permissions.
