@@ -67,8 +67,10 @@ RUN \
 	pip install ${PIPFLAGS} \
 		-r requirements_all.txt && \
 	echo "**** install dependencies for hacs.xyz ****" && \
-	HACS_RELEASE=$(curl -sX GET "https://api.github.com/repos/hacs/integration/releases/latest" | \
-		awk '/tag_name/{print $4;exit}' FS='[""]'); && \
+	if [ -z ${HACS_RELEASE+x} ]; then \
+		HACS_RELEASE=$(curl -sX GET "https://api.github.com/repos/hacs/integration/releases/latest" | \
+			awk '/tag_name/{print $4;exit}' FS='[""]'); \
+	fi && \
 	mkdir -p \
 		/tmp/hacs-source && \
 	curl -o \
