@@ -14,8 +14,6 @@ ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpin
 # copy local files
 COPY root/ /
 
-# https://github.com/home-assistant/core/pull/43771
-
 # install packages
 RUN \
 	echo "**** install build packages ****" && \
@@ -39,7 +37,11 @@ RUN \
 		libjpeg-turbo \
 		libstdc++ \
 		libxslt \
+		mariadb-connector-c \
+		mariadb-connector-c-dev \
+		openssh-client \
 		openssl \
+		postgresql-libs \
 		py3-pip \
 		python3 \
 		tiff && \
@@ -52,24 +54,21 @@ RUN \
 	tar xf \
 		/tmp/core.tar.gz -C \
 		/tmp/core --strip-components=1 && \
-	awk '/# Home Assistant core/,/^$/' /tmp/core/requirements_all.txt >/tmp/constraints_hass.txt && \
 	mkdir -p /pip-packages && \
 	pip install --target /pip-packages --no-cache-dir --upgrade \
 		distlib && \
 	pip install --no-cache-dir --upgrade \
+		mysqlclient \
 		pip==20.3 \
 		wheel && \
 	pip install ${PIPFLAGS} \
 		homeassistant==${VERSION} && \
 	cd /tmp/core && \
 	pip install ${PIPFLAGS} \
-		-c /tmp/constraints_hass.txt \
-		-r requirements_test_all.txt && \
+		-r requirements_all.txt && \
 	echo "**** install dependencies for hacs.xyz ****" && \
-	if [ -z ${HACS_RELEASE+x} ]; then \
-		HACS_RELEASE=$(curl -sX GET "https://api.github.com/repos/hacs/integration/releases/latest" | \
-			awk '/tag_name/{print $4;exit}' FS='[""]'); \
-	fi && \
+	HACS_RELEASE=$(curl -sX GET "https://api.github.com/repos/hacs/integration/releases/latest" | \
+		awk '/tag_name/{print $4;exit}' FS='[""]'); && \
 	mkdir -p \
 		/tmp/hacs-source && \
 	curl -o \
