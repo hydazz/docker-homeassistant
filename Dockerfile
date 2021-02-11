@@ -54,7 +54,6 @@ RUN \
 	pip install --target /pip-packages --no-cache-dir --upgrade \
 		distlib && \
 	pip install --no-cache-dir --upgrade \
-		mysqlclient \
 		pip==20.3 \
 		wheel && \
 	pip install ${PIPFLAGS} \
