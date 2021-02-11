@@ -37,11 +37,7 @@ RUN \
 		libjpeg-turbo \
 		libstdc++ \
 		libxslt \
-		mariadb-connector-c \
-		mariadb-connector-c-dev \
-		openssh-client \
 		openssl \
-		postgresql-libs \
 		py3-pip \
 		python3 \
 		tiff && \
