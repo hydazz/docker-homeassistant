@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv bash
+
+chmod 600 /config/.storage/auth
