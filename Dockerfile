@@ -43,7 +43,7 @@ RUN \
 		tiff && \
 	echo "**** install homeassistant ****" && \
 	if [ -z ${VERSION+x} ]; then \
-		VERSION=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | jq -r .tag_name); \
+		VERSION=$(curl -sL https://api.github.com/repos/home-assistant/core/releases/latest | jq -r .tag_name); \
 	fi && \
 	mkdir -p \
 		/tmp/core && \
@@ -66,7 +66,7 @@ RUN \
 		-r requirements_all.txt && \
 	echo "**** install dependencies for hacs.xyz ****" && \
 	if [ -z ${HACS_RELEASE+x} ]; then \
-		HACS_RELEASE=$(curl -sX GET "https://api.github.com/repos/hacs/integration/releases/latest" | \
+		HACS_RELEASE=$(curl -sL "https://api.github.com/repos/hacs/integration/releases/latest" | \
 			awk '/tag_name/{print $4;exit}' FS='[""]'); \
 	fi && \
 	mkdir -p \

@@ -43,8 +43,8 @@ jobs:
             --platform=linux/amd64 \
             --output "type=image,push=true" \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
-            --build-arg VERSION=$(curl -sX GET "https://api.github.com/repos/hydazz/docker-homeassistant/releases/latest" | jq -r .tag_name) \
-            --tag vcxpz/homeassistant:$(curl -sX GET "https://api.github.com/repos/hydazz/docker-homeassistant/releases/latest" | jq -r .tag_name) \
+            --build-arg VERSION=$(curl -sL "https://api.github.com/repos/hydazz/docker-homeassistant/releases/latest" | jq -r '.tag_name') \
+            --tag vcxpz/homeassistant:$(curl -sL "https://api.github.com/repos/hydazz/docker-homeassistant/releases/latest" | jq -r '.tag_name') \
             --tag vcxpz/homeassistant:latest \
             --file Dockerfile .
 
