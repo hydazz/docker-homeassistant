@@ -8,7 +8,7 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.13/amd64/" \
 	PYTHONPATH="/pip-packages:$PYTHONPATH"
 
 # copy local files
@@ -59,10 +59,10 @@ RUN \
 	pip install --no-cache-dir --upgrade \
 		pip==20.3 \
 		wheel && \
-	pip install "${PIPFLAGS}" \
+	pip install ${PIPFLAGS} \
 		homeassistant=="${VERSION}" && \
 	cd /tmp/core && \
-	pip install "${PIPFLAGS}" \
+	pip install ${PIPFLAGS} \
 		-r requirements_all.txt && \
 	echo "**** install dependencies for hacs.xyz ****" && \
 	if [ -z ${HACS_RELEASE+x} ]; then \
@@ -77,7 +77,7 @@ RUN \
 	tar xf \
 		/tmp/hacs.tar.gz -C \
 		/tmp/hacs-source --strip-components=1 && \
-	pip install "${PIPFLAGS}" \
+	pip install ${PIPFLAGS} \
 		-r /tmp/hacs-source/requirements.txt && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
