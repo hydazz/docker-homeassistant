@@ -8,7 +8,7 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.13/amd64/" \
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
 	PYTHONPATH="/pip-packages:$PYTHONPATH"
 
 # copy local files
@@ -38,12 +38,14 @@ RUN \
 		libstdc++ \
 		libxslt \
 		openssl \
+		postgresql-libs \
 		py3-pip \
 		python3 \
 		tiff && \
 	echo "**** install homeassistant ****" && \
 	if [ -z ${VERSION+x} ]; then \
-		VERSION=$(curl -sL https://api.github.com/repos/home-assistant/core/releases/latest | jq -r .tag_name); \
+		VERSION=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | \
+			jq -r .tag_name); \
 	fi && \
 	mkdir -p \
 		/tmp/core && \
