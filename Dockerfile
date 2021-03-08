@@ -44,8 +44,7 @@ RUN \
 		tiff && \
 	echo "**** install homeassistant ****" && \
 	if [ -z ${VERSION+x} ]; then \
-		VERSION=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | \
-			jq -r .tag_name); \
+		VERSION=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | jq -r .tag_name); \
 	fi && \
 	mkdir -p \
 		/tmp/core && \
