@@ -55,9 +55,9 @@ RUN \
 		/tmp/core.tar.gz -C \
 		/tmp/core --strip-components=1 && \
 	mkdir -p /pip-packages && \
-	pip install --target /pip-packages --no-cache-dir --upgrade \
+	pip install --target /pip-packages --no-cache-dir \
 		distlib && \
-	pip install --no-cache-dir --upgrade \
+	pip install --no-cache-dir \
 		pip==20.3 \
 		wheel && \
 	pip install ${PIPFLAGS} \
