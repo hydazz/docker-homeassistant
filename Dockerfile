@@ -15,7 +15,7 @@ ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpin
 COPY root/ /
 
 # install packages
-RUN \
+RUN set -xe && \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
 		autoconf \
