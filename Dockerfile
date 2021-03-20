@@ -54,17 +54,22 @@ RUN set -xe && \
 	tar xf \
 		/tmp/core.tar.gz -C \
 		/tmp/core --strip-components=1 && \
+	HASS_BASE=$(cat /tmp/core/build.json | \
+		jq -r .build_from.amd64 | \
+		cut -d: -f2) && \
 	mkdir -p /pip-packages && \
-	pip install --target /pip-packages --no-cache-dir \
+	pip install --target /pip-packages --no-cache-dir --upgrade \
 		distlib && \
-	pip install --no-cache-dir \
+	pip install --no-cache-dir --upgrade \
 		pip==20.3 \
 		wheel && \
 	pip install ${PIPFLAGS} \
-		homeassistant=="${VERSION}" && \
+		homeassistant==${VERSION} && \
 	cd /tmp/core && \
 	pip install ${PIPFLAGS} \
 		-r requirements_all.txt && \
+	pip install ${PIPFLAGS} \
+		-r https://raw.githubusercontent.com/home-assistant/docker/${HASS_BASE}/requirements.txt && \
 	echo "**** install dependencies for hacs.xyz ****" && \
 	if [ -z ${HACS_RELEASE+x} ]; then \
 		HACS_RELEASE=$(curl -sL "https://api.github.com/repos/hacs/integration/releases/latest" | \
