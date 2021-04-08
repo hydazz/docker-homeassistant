@@ -22,6 +22,8 @@ RUN \
 	apk add --no-cache --virtual=build-dependencies \
 		autoconf \
 		ca-certificates \
+		cmake \
+		ffmpeg-dev \
 		g++ \
 		gcc \
 		jpeg-dev \
@@ -29,7 +31,6 @@ RUN \
 		libffi-dev \
 		libgcc \
 		libxml2-dev \
-		ffmpeg-dev \
 		libxslt-dev \
 		make \
 		musl-dev \
