@@ -48,6 +48,8 @@ RUN \
 		iputils \
 		libcap \
 		libjpeg-turbo \
+		mariadb-connector-c \
+		mariadb-connector-c-dev \
 		libstdc++ \
 		libxslt \
 		openssl \
