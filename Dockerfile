@@ -29,6 +29,7 @@ RUN \
 		libffi-dev \
 		libgcc \
 		libxml2-dev \
+		ffmpeg-dev \
 		libxslt-dev \
 		make \
 		musl-dev \
