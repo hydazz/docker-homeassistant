@@ -50,6 +50,7 @@ RUN \
 		libjpeg-turbo \
 		mariadb-connector-c \
 		mariadb-connector-c-dev \
+		openssh-client \
 		libstdc++ \
 		libxslt \
 		openssl \
