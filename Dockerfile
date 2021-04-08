@@ -23,6 +23,7 @@ RUN set -xe && \
 		g++ \
 		gcc \
 		jq \
+		jpeg-dev \
 		libffi-dev \
 		libxml2-dev \
 		libxslt-dev \
