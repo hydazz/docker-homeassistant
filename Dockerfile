@@ -28,6 +28,8 @@ RUN \
 		jq \
 		libffi-dev \
 		libgcc \
+		libxml2-dev \
+		libxslt-dev \
 		make \
 		musl-dev \
 		openssl-dev \
