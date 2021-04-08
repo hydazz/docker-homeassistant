@@ -14,22 +14,26 @@ ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpin
 # copy local files
 COPY root/ /
 
+# https://github.com/home-assistant/core/pull/43771
+
 # install packages
-RUN set -xe && \
+RUN \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
 		autoconf \
 		ca-certificates \
 		g++ \
 		gcc \
+		jpeg-dev \
 		jq \
 		libffi-dev \
-		libxml2-dev \
-		libxslt-dev \
+		libgcc \
 		make \
+		musl-dev \
 		openssl-dev \
 		python3-dev \
-		unzip && \
+		unzip \
+		zlib-dev && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		bluez-deprecated \
@@ -47,18 +51,21 @@ RUN set -xe && \
 		python3 \
 		tiff && \
 	echo "**** install homeassistant ****" && \
-	if [ -z ${VERSION+x} ]; then \
-		VERSION=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | jq -r .tag_name); \
-	fi && \
 	mkdir -p \
 		/tmp/core && \
+	if [ -z ${VERSION+x} ]; then \
+		VERSION=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | \
+			jq -r .tag_name); \
+	fi && \
 	curl -o \
 		/tmp/core.tar.gz -L \
 		"https://github.com/home-assistant/core/archive/${VERSION}.tar.gz" && \
 	tar xf \
 		/tmp/core.tar.gz -C \
 		/tmp/core --strip-components=1 && \
-	HASS_BASE=$(cat /tmp/core/build.json | jq -r .build_from.amd64 | cut -d: -f2) && \
+	HASS_BASE=$(cat /tmp/core/build.json | \
+		jq -r .build_from.amd64 | \
+		cut -d: -f2) && \
 	mkdir -p /pip-packages && \
 	pip install --target /pip-packages --no-cache-dir --upgrade \
 		distlib && \
