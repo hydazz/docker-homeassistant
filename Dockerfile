@@ -8,7 +8,7 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.13/amd64/" \
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
 	PYTHONPATH="/pip-packages:$PYTHONPATH"
 
 # copy local files
@@ -23,7 +23,6 @@ RUN set -xe && \
 		g++ \
 		gcc \
 		jq \
-		jpeg-dev \
 		libffi-dev \
 		libxml2-dev \
 		libxslt-dev \
