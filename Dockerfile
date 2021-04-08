@@ -30,11 +30,13 @@ RUN \
 		jq \
 		libffi-dev \
 		libgcc \
+		libudev-zero-dev \
 		libxml2-dev \
 		libxslt-dev \
 		make \
 		musl-dev \
 		openssl-dev \
+		openzwave-dev \
 		python3-dev \
 		unzip \
 		zlib-dev && \
