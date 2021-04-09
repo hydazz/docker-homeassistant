@@ -8,7 +8,7 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.13/amd64/" \
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
 	PYTHONPATH="/pip-packages:$PYTHONPATH"
 
 # copy local files
@@ -20,30 +20,14 @@ COPY root/ /
 RUN set -xe && \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
-		alpine-sdk \
 		autoconf \
-		bzip2-dev \
 		ca-certificates \
-		db-dev \
-		expat-dev \
-		g++ \
 		gcc \
-		gdbm-dev \
+		g++ \
 		jq \
 		libffi-dev \
-		libressl-dev \
 		make \
-		ncurses5-libs \
-		ncurses5-widec-libs \
-		openjpeg \
-		python3-dev \
-		readline-dev \
-		sqlite-dev \
-		tiff-dev \
-		tk-dev \
-		unzip \
-		xz-dev \
-		zlib-dev && \
+		unzip && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		bluez-deprecated \
@@ -60,9 +44,12 @@ RUN set -xe && \
 		openssh-client \
 		openssl \
 		postgresql-libs \
-		py3-pip \
-		python3 \
 		tiff && \
+	apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.13/main/ \
+		python3==3.8.8-r0 \
+		python3-dev==3.8.8-r0 && \
+	apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.13/community/ \
+		py3-pip==20.3.4-r0 && \
 	echo "**** install homeassistant ****" && \
 	mkdir -p \
 		/tmp/core && \
@@ -109,7 +96,8 @@ RUN set -xe && \
 		-r /tmp/hacs-source/requirements.txt && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
-		build-dependencies && \
+		build-dependencies \
+		python3-dev && \
 	rm -rf \
 		/tmp/* \
 		/root/.cache
