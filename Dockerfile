@@ -8,8 +8,8 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
-	PYTHONPATH="/pip-packages:$PYTHONPATH"
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/"
+ENV PYTHONPATH="/pip-packages:$PYTHONPATH"
 
 # copy local files
 COPY root/ /
@@ -22,24 +22,12 @@ RUN \
 	apk add --no-cache --virtual=build-dependencies \
 		autoconf \
 		ca-certificates \
-		cmake \
-		ffmpeg-dev \
 		g++ \
 		gcc \
-		jpeg-dev \
 		jq \
-		libffi-dev \
-		libgcc \
-		libxml2-dev \
-		postgresql-dev \
-		libxslt-dev \
 		make \
-		musl-dev \
-		openssl-dev \
-		openzwave-dev \
 		python3-dev \
-		unzip \
-		zlib-dev && \
+		unzip && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		bluez-deprecated \
@@ -49,11 +37,11 @@ RUN \
 		iputils \
 		libcap \
 		libjpeg-turbo \
+		libstdc++ \
+		libxslt \
 		mariadb-connector-c \
 		mariadb-connector-c-dev \
 		openssh-client \
-		libstdc++ \
-		libxslt \
 		openssl \
 		postgresql-libs \
 		py3-pip \
@@ -72,9 +60,7 @@ RUN \
 	tar xf \
 		/tmp/core.tar.gz -C \
 		/tmp/core --strip-components=1 && \
-	HASS_BASE=$(cat /tmp/core/build.json | \
-		jq -r .build_from.amd64 | \
-		cut -d: -f2) && \
+	HASS_BASE=$(cat /tmp/core/build.json | jq -r .build_from.amd64 | cut -d: -f2) && \
 	mkdir -p /pip-packages && \
 	pip install --target /pip-packages --no-cache-dir --upgrade \
 		distlib && \
