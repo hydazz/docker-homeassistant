@@ -73,7 +73,7 @@ RUN set -xe && \
 		pip==20.3 \
 		wheel && \
 	pip install ${PIPFLAGS} \
-		homeassistant==${VERSION} && \
+		homeassistant=="${VERSION}" && \
 	cd /tmp/core && \
 	pip install ${PIPFLAGS} \
 		-r requirements_all.txt && \
