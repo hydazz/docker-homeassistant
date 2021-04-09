@@ -95,9 +95,6 @@ RUN set -xe && \
 		/tmp/hacs-source --strip-components=1 && \
 	pip install ${PIPFLAGS} \
 		-r /tmp/hacs-source/requirements.txt && \
-	sed -i \
-		-e "s/v3.13/edge/g" \
-		/etc/apk/repositories && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
 		build-dependencies && \
