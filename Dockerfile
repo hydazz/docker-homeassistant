@@ -20,7 +20,7 @@ COPY root/ /
 RUN set -xe && \
 	# somethings up with hass and py3.9
 	sed -i \
-		-e "s/edge/v3.13/g"
+		-e "s/edge/v3.13/g" \
 		/etc/apk/repositories && \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
@@ -96,7 +96,7 @@ RUN set -xe && \
 	pip install ${PIPFLAGS} \
 		-r /tmp/hacs-source/requirements.txt && \
 	sed -i \
-		-e "s/v3.13/edge/g"
+		-e "s/v3.13/edge/g" \
 		/etc/apk/repositories && \
 	apk upgrade && \
 	echo "**** cleanup ****" && \
