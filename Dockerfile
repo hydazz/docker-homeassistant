@@ -8,7 +8,8 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" PYTHONPATH="/pip-packages:$PYTHONPATH"
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
+	PYTHONPATH="/pip-packages:$PYTHONPATH"
 
 # copy local files
 COPY root/ /
@@ -44,8 +45,10 @@ RUN \
 		openssl \
 		postgresql-libs \
 		py3-pip \
-		python3 \
 		tiff && \
+	# homeassistant wont install on python3.9
+	apk add --repository http://dl-cdn.alpinelinux.org/alpine/v3.13/main \
+		python3==3.8.8-r0 && \
 	echo "**** install homeassistant ****" && \
 	mkdir -p \
 		/tmp/core && \
