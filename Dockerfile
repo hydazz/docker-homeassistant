@@ -41,9 +41,9 @@ RUN set -xe && \
 		sqlite-dev \
 		tiff-dev \
 		tk-dev \
-		unzip && \
+		unzip \
 		xz-dev \
-		zlib-dev \
+		zlib-dev && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		bluez-deprecated \
