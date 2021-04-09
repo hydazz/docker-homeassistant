@@ -8,8 +8,7 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/"
-ENV PYTHONPATH="/pip-packages:$PYTHONPATH"
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" PYTHONPATH="/pip-packages:$PYTHONPATH"
 
 # copy local files
 COPY root/ /
@@ -22,8 +21,8 @@ RUN \
 	apk add --no-cache --virtual=build-dependencies \
 		autoconf \
 		ca-certificates \
-		g++ \
 		gcc \
+		g++ \
 		jq \
 		make \
 		python3-dev \
@@ -60,7 +59,9 @@ RUN \
 	tar xf \
 		/tmp/core.tar.gz -C \
 		/tmp/core --strip-components=1 && \
-	HASS_BASE=$(cat /tmp/core/build.json | jq -r .build_from.amd64 | cut -d: -f2) && \
+	HASS_BASE=$(cat /tmp/core/build.json | \
+		jq -r .build_from.amd64 | \
+		cut -d: -f2) && \
 	mkdir -p /pip-packages && \
 	pip install --target /pip-packages --no-cache-dir --upgrade \
 		distlib && \
