@@ -31,6 +31,7 @@ RUN \
 		libffi-dev \
 		libgcc \
 		libxml2-dev \
+		postgresql-dev \
 		libxslt-dev \
 		make \
 		musl-dev \
