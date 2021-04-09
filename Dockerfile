@@ -98,7 +98,6 @@ RUN set -xe && \
 	sed -i \
 		-e "s/v3.13/edge/g" \
 		/etc/apk/repositories && \
-	apk upgrade && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
 		build-dependencies && \
