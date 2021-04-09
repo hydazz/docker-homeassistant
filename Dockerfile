@@ -8,7 +8,7 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.13/amd64/" \
 	PYTHONPATH="/pip-packages:$PYTHONPATH"
 
 # copy local files
@@ -18,20 +18,32 @@ COPY root/ /
 
 # install packages
 RUN set -xe && \
-	# somethings up with hass and py3.9
-	sed -i \
-		-e "s/edge/v3.13/g" \
-		/etc/apk/repositories && \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
+		alpine-sdk \
 		autoconf \
+		bzip2-dev \
 		ca-certificates \
-		gcc \
+		db-dev \
+		expat-dev \
 		g++ \
+		gcc \
+		gdbm-dev \
 		jq \
+		libffi-dev \
+		libressl-dev \
 		make \
+		ncurses5-libs \
+		ncurses5-widec-libs \
+		openjpeg
 		python3-dev \
+		readline-dev \
+		sqlite-dev \
+		tiff-dev \
+		tk-dev \
 		unzip && \
+		xz-dev \
+		zlib-dev \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		bluez-deprecated \
