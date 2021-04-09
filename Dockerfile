@@ -17,7 +17,11 @@ COPY root/ /
 # https://github.com/home-assistant/core/pull/43771
 
 # install packages
-RUN \
+RUN set -xe && \
+	# somethings up with hass and py3.9
+	sed -i \
+		-e "s/edge/v3.13/g"
+		/etc/apk/repositories && \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
 		autoconf \
@@ -45,10 +49,8 @@ RUN \
 		openssl \
 		postgresql-libs \
 		py3-pip \
+		python3 \
 		tiff && \
-	# homeassistant wont install on python3.9
-	apk add --repository http://dl-cdn.alpinelinux.org/alpine/v3.13/main \
-		python3==3.8.8-r0 && \
 	echo "**** install homeassistant ****" && \
 	mkdir -p \
 		/tmp/core && \
@@ -93,6 +95,10 @@ RUN \
 		/tmp/hacs-source --strip-components=1 && \
 	pip install ${PIPFLAGS} \
 		-r /tmp/hacs-source/requirements.txt && \
+	sed -i \
+		-e "s/v3.13/edge/g"
+		/etc/apk/repositories && \
+	apk upgrade && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
 		build-dependencies && \
