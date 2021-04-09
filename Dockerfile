@@ -35,7 +35,7 @@ RUN set -xe && \
 		make \
 		ncurses5-libs \
 		ncurses5-widec-libs \
-		openjpeg
+		openjpeg \
 		python3-dev \
 		readline-dev \
 		sqlite-dev \
