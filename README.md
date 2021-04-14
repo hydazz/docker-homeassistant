@@ -35,7 +35,7 @@ docker run -d \
 
 ## Upgrading Home Assistant
 
-To upgrade, all you have to do is pull the latest Docker image. We automatically check for Home Assistant updates every hour. When a new version is released, we build and publish an image both as a version tag and on `:latest`.
+To upgrade, all you have to do is pull the latest Docker image. We automatically check for Home Assistant updates daily. When a new version is released, we build and publish an image both as a version tag and on `:latest`.
 
 ## Fixing Appdata Permissions
 
