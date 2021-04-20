@@ -19,17 +19,17 @@ COPY root/ /
 # install packages
 RUN set -xe && \
 	echo "**** install build packages ****" && \
-	apk add --no-cache --virtual=build-dependencies \
+	apk add --no-cache --virtual=build-dependencies -X http://dl-cdn.alpinelinux.org/alpine/v3.13/main/ \
 		autoconf \
 		ca-certificates \
-		gcc \
 		g++ \
+		gcc \
 		jq \
-		libffi-dev \
 		make \
+		python3-dev==3.8.8-r0 \
 		unzip && \
 	echo "**** install runtime packages ****" && \
-	apk add --no-cache \
+	apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/main/ \
 		bluez-deprecated \
 		curl \
 		eudev-libs \
@@ -44,12 +44,9 @@ RUN set -xe && \
 		openssh-client \
 		openssl \
 		postgresql-libs \
-		tiff && \
-	apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.13/main/ \
+		py3-pip==20.3.4-r0 \
 		python3==3.8.8-r0 \
-		python3-dev==3.8.8-r0 && \
-	apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.13/community/ \
-		py3-pip==20.3.4-r0 && \
+		tiff && \
 	echo "**** install homeassistant ****" && \
 	mkdir -p \
 		/tmp/core && \
@@ -73,7 +70,7 @@ RUN set -xe && \
 		pip==20.3 \
 		wheel && \
 	pip install ${PIPFLAGS} \
-		homeassistant=="${VERSION}" && \
+		homeassistant==${VERSION} && \
 	cd /tmp/core && \
 	pip install ${PIPFLAGS} \
 		-r requirements_all.txt && \
@@ -96,8 +93,7 @@ RUN set -xe && \
 		-r /tmp/hacs-source/requirements.txt && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
-		build-dependencies \
-		python3-dev && \
+		build-dependencies && \
 	rm -rf \
 		/tmp/* \
 		/root/.cache
