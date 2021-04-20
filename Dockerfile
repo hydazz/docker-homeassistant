@@ -29,7 +29,7 @@ RUN set -xe && \
 		python3-dev==3.8.8-r0 \
 		unzip && \
 	echo "**** install runtime packages ****" && \
-	apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/main/ \
+	apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/main/ -X http://dl-cdn.alpinelinux.org/alpine/v3.13/community/ \
 		bluez-deprecated \
 		curl \
 		eudev-libs \
