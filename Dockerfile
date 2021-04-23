@@ -50,9 +50,9 @@ RUN set -xe && \
 	echo "**** install homeassistant ****" && \
 	mkdir -p \
 		/tmp/core && \
-	if [ -z ${VERSION+x} ]; then \
+	if [ -z ${VERSION} ]; then \
 		VERSION=$(curl -sX GET https://api.github.com/repos/home-assistant/core/releases/latest | \
-			jq -r .tag_name); \
+			jq -r '.tag_name'); \
 	fi && \
 	curl -o \
 		/tmp/core.tar.gz -L \
