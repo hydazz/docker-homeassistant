@@ -47,7 +47,7 @@ libgcrypt-1.9.3-r0
 libgomp-10.3.1_git20210409-r1
 libgpg-error-1.42-r0
 libintl-0.21-r0
-libjpeg-turbo-2.0.6-r0
+libjpeg-turbo-2.1.0-r0
 libldap-2.4.58-r0
 libmd-1.0.3-r0
 libmount-2.36.2-r2
