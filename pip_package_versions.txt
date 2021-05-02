@@ -1,13 +1,13 @@
 AEMET-OpenData==0.1.8
 APScheduler==3.6.3
-Adafruit-Blinka==6.5.0
+Adafruit-Blinka==6.6.0
 Adafruit-GPIO==1.0.3
-Adafruit-PlatformDetect==3.7.0
+Adafruit-PlatformDetect==3.8.0
 Adafruit-PureIO==1.1.8
 Adafruit-SHT31==1.0.2
 Ambiclimate==0.2.1
 Authlib==0.15.3
-Babel==2.9.0
+Babel==2.9.1
 BlinkStick==1.1.8
 Brotli==1.0.9
 CO2Signal==0.4.2
@@ -62,7 +62,7 @@ RachioPy==1.0.3
 ReParser==1.4.3
 RestrictedPython==5.1
 RtmAPI==0.7.2
-Rx==3.1.1
+Rx==3.2.0
 SQLAlchemy==1.3.23
 SecretStorage==3.3.1
 SmartHab==0.21
@@ -90,7 +90,7 @@ advantage-air==0.2.1
 aenum==3.0.0
 afsapi==0.0.4
 agent-py==0.0.23
-aio-geojson-client==0.13
+aio-geojson-client==0.14
 aio-geojson-geonetnz-quakes==0.12
 aio-geojson-geonetnz-volcano==0.5
 aio-geojson-nsw-rfs-incidents==0.3
@@ -109,7 +109,7 @@ aioesphomeapi==2.6.6
 aiofiles==0.6.0
 aioflo==0.4.1
 aioftp==0.12.0
-aiogithubapi==21.2.0
+aiogithubapi==21.4.0
 aioguardian==1.0.4
 aioharmony==0.2.7
 aiohomekit==0.2.61
@@ -156,12 +156,12 @@ arcam-fmj==0.5.3
 aresponses==2.1.4
 argcomplete==1.12.3
 arris-tg2492lg==1.1.0
-arrow==1.0.3
+arrow==1.1.0
 asmog==0.0.6
 asterisk-mbox==0.5.0
 astpath==0.6.1
 astral==1.10.1
-astroid==2.5.5
+astroid==2.5.6
 async-dns==1.1.10
 async-generator==1.10
 async-timeout==3.0.1
@@ -171,7 +171,7 @@ asyncio-dgram==1.2.0
 asyncio-mqtt==0.8.1
 asyncio==3.4.3
 asyncpysupla==0.0.5
-asyncssh==2.5.0
+asyncssh==2.6.0
 asynctest==0.13.0
 atenpdu==0.3.0
 atomicwrites==1.4.0
@@ -218,10 +218,10 @@ btlewrap==0.1.0
 btsmarthub-devicelist==0.2.0
 buienradar==1.0.4
 cached-property==1.5.2
-cachetools==4.2.1
+cachetools==4.2.2
 caldav==0.7.1
 casttube==0.2.1
-cattrs==1.5.0
+cattrs==1.6.0
 cbor2==5.2.0
 cchardet==2.1.7
 certifi==2020.12.5
@@ -241,7 +241,7 @@ clx-sdk-xms==1.0.0
 coinbase==2.1.0
 colorama==0.4.4
 coloredlogs==15.0
-colorlog==4.7.2
+colorlog==5.0.1
 colorthief==0.2.1
 colorzero==2.0
 commonmark==0.9.1
@@ -266,7 +266,7 @@ dateparser==1.0.0
 dbus-next==0.2.2
 debugpy==1.2.1
 decorator==5.0.7
-deepmerge==0.2.1
+deepmerge==0.3.0
 defusedxml==0.6.0
 deluge-client==1.7.1
 demjson==2.2.4
@@ -352,7 +352,7 @@ gogogate2-api==3.0.0
 google-api-core==1.26.3
 google-api-python-client==1.6.4
 google-auth-oauthlib==0.4.4
-google-auth==1.29.0
+google-auth==1.30.0
 google-cloud-pubsub==2.1.0
 google-cloud-texttospeech==0.4.0
 google-nest-sdm==0.2.12
@@ -376,7 +376,7 @@ h2==2.6.2
 ha-ffmpeg==3.0.2
 ha-philipsjs==2.7.0
 habitipy==0.2.0
-hacs-frontend==20210214110032
+hacs-frontend==20210429001005
 halo==0.0.31
 hangups==0.4.11
 hass-nabucasa==0.42.0
@@ -566,7 +566,7 @@ pandas==1.2.4
 paramiko==2.7.2
 passlib==1.7.4
 pathlib==1.0.1
-pbr==5.5.1
+pbr==5.6.0
 pcal9535a==0.7
 pdunehd==1.3.2
 pencompy==0.0.3
@@ -593,7 +593,7 @@ pprintpp==0.4.0
 praw==7.1.4
 prawcore==1.5.0
 prayer-times-calculator==0.0.3
-pre-commit==2.10.1
+pre-commit==2.12.1
 prettytable==2.1.0
 proliphix==0.4.1
 prometheus-client==0.7.1
@@ -603,7 +603,7 @@ proxmoxer==1.1.1
 psutil==5.8.0
 psycopg2==2.8.6
 ptyprocess==0.7.0
-pubnub==5.1.2
+pubnub==5.1.3
 pubnubsub-handler==1.0.9
 pulsectl==20.2.4
 pure-pcapy3==1.0.1
@@ -720,7 +720,7 @@ pylast==4.2.0
 pylaunches==1.0.0
 pylgnetcast-homeassistant==0.2.0.dev0
 pylibrespot-java==0.1.0
-pylint==2.8.0
+pylint==2.8.2
 pylitejet==0.3.0
 pylitterbot==2021.2.8
 pyloopenergy==0.2.1
@@ -804,13 +804,13 @@ pystiebeleltron==0.0.1.dev2
 pysuez==0.1.19
 pytankerkoenig==0.0.6
 pytautulli==0.5.0
-pytest-asyncio==0.14.0
+pytest-asyncio==0.15.1
 pytest-cov==2.11.1
 pytest-mock==3.6.0
 pytest-rerunfailures==9.1.1
 pytest-runner==5.3.0
-pytest-socket==0.3.5
-pytest==6.2.2
+pytest-socket==0.4.0
+pytest==6.2.3
 pytfiac==0.4
 pythinkingcleaner==0.0.3
 python-awair==0.2.1
@@ -896,7 +896,7 @@ requests-oauth==0.4.1
 requests-oauthlib==1.3.0
 requests-toolbelt==0.9.1
 requests==2.25.1
-responses==0.13.2
+responses==0.13.3
 rfc3986==1.4.0
 rfk101py==0.0.1
 rflink==0.0.58
@@ -1028,7 +1028,7 @@ tuyaha==0.0.10
 twentemilieu==0.3.0
 twilio==6.32.0
 twinkly-client==0.0.2
-typing-extensions==3.7.4.3
+typing-extensions==3.10.0.0
 typing-inspect==0.6.0
 tzlocal==2.0.0
 uEagle==0.0.2
