@@ -14,8 +14,6 @@ ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpin
 # copy local files
 COPY root/ /
 
-# https://github.com/home-assistant/core/pull/43771
-
 # install packages
 RUN set -xe && \
 	echo "**** install build packages ****" && \
@@ -26,7 +24,7 @@ RUN set -xe && \
 		gcc \
 		jq \
 		make \
-		python3-dev==3.8.8-r0 \
+		python3-dev==3.8.10-r0 \
 		unzip && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/main/ -X http://dl-cdn.alpinelinux.org/alpine/v3.13/community/ \
@@ -45,7 +43,7 @@ RUN set -xe && \
 		openssl \
 		postgresql-libs \
 		py3-pip==20.3.4-r0 \
-		python3==3.8.8-r0 \
+		python3==3.8.10-r0 \
 		tiff && \
 	echo "**** install homeassistant ****" && \
 	mkdir -p \
