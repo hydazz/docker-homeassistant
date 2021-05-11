@@ -1,8 +1,8 @@
 AEMET-OpenData==0.1.8
 APScheduler==3.6.3
-Adafruit-Blinka==6.8.0
+Adafruit-Blinka==6.9.0
 Adafruit-GPIO==1.0.3
-Adafruit-PlatformDetect==3.11.0
+Adafruit-PlatformDetect==3.13.0
 Adafruit-PureIO==1.1.8
 Adafruit-SHT31==1.0.2
 Ambiclimate==0.2.1
@@ -17,14 +17,14 @@ DTLSSocket==0.1.12
 DateTime==4.3
 Deprecated==1.2.12
 DoorBirdPy==2.1.0
-Flask==1.1.2
+Flask==2.0.0
 HAP-python==3.4.1
-HATasmota==0.2.11
+HATasmota==0.2.12
 Hydrawiser==0.2
-Jinja2==2.11.3
+Jinja2==3.0.0
 Js2Py==0.71
 Markdown==3.3.4
-MarkupSafe==1.1.1
+MarkupSafe==2.0.0
 Mastodon.py==1.5.1
 MechanicalSoup==0.6.0
 OPi.GPIO==0.4.0
@@ -67,12 +67,12 @@ Rx==3.2.0
 SQLAlchemy==1.4.13
 SecretStorage==3.3.1
 SmartHab==0.21
-Sphinx==3.5.4
+Sphinx==4.0.1
 TravisPy==0.3.5
 TwitterAPI==2.7.2
 WSDiscovery==2.0.0
 WazeRouteCalculator==0.12
-Werkzeug==1.0.1
+Werkzeug==2.0.0
 XBee==2.3.2
 XlsxWriter==1.4.2
 abodepy==1.2.0
@@ -147,7 +147,7 @@ alarmdecoder==1.13.10
 alpha-vantage==2.3.1
 amcrest==1.7.2
 android-backup==0.2.0
-androidtv==0.0.58
+androidtv==0.0.59
 anel-pwrctrl-homeassistant==0.0.1.dev2
 anthemav==1.1.10
 apcaccess==0.0.13
@@ -242,7 +242,7 @@ clearpasspy==1.0.2
 click-datetime==0.2
 click-log==0.3.2
 click-plugins==1.1.1
-click==7.1.2
+click==8.0.0
 clx-sdk-xms==1.0.0
 coinbase==2.1.0
 colorama==0.4.4
@@ -276,7 +276,7 @@ deepmerge==0.3.0
 defusedxml==0.6.0
 deluge-client==1.7.1
 demjson==2.2.4
-denonavr==0.10.6
+denonavr==0.10.7
 devolo-home-control-api==0.17.3
 dicttoxml==1.7.4
 directv==0.4.0
@@ -288,7 +288,7 @@ dlipower==0.7.165
 dnspython3==1.15.0
 dnspython==2.1.0
 docopt==0.6.2
-docutils==0.16
+docutils==0.17.1
 dovado==0.4.1
 dsmr-parser==0.29
 dwdwfsapi==1.0.3
@@ -366,7 +366,7 @@ googlemaps==2.5.1
 goslide-api==0.5.1
 gpiozero==1.5.1
 gps3==0.33.3
-graphql-subscription-manager==0.3.6
+graphql-subscription-manager==0.4.0
 graphviz==0.16
 greeclimate==0.11.4
 greeneye-monitor==2.1
@@ -380,7 +380,7 @@ guppy3==3.1.0
 h11==0.12.0
 h2==2.6.2
 ha-ffmpeg==3.0.2
-ha-philipsjs==2.7.0
+ha-philipsjs==2.7.3
 habitipy==0.2.0
 hacs-frontend==20210429001005
 halo==0.0.31
@@ -400,7 +400,7 @@ hole==0.5.1
 holidays==0.11.1
 home-assistant-frontend==20210504.0
 homeassistant-pyozw==0.1.10
-homeassistant==2021.5.1
+homeassistant==2021.5.2
 homeconnect==0.6.3
 homematicip==0.13.1
 homepluscontrol==0.0.5
@@ -443,7 +443,7 @@ iperf3==0.1.11
 iso8601==0.1.14
 isodate==0.6.0
 isort==5.8.0
-itsdangerous==1.1.0
+itsdangerous==2.0.0
 jeepney==0.6.0
 jmespath==0.10.0
 josepy==1.8.0
@@ -566,7 +566,7 @@ openwrt-luci-rpc==1.1.8
 openwrt-ubus-rpc==0.0.2
 oru==0.1.11
 orvibo==1.1.1
-ovoenergy==1.1.11
+ovoenergy==1.1.12
 oyaml==1.0
 packaging==20.9
 paho-mqtt==1.5.1
@@ -660,7 +660,7 @@ pyatv==0.7.7
 pybbox==0.0.5a0
 pyblackbird==0.5
 pybotvac==0.0.20
-pycares==3.1.1
+pycares==3.2.3
 pycarwings2==2.10
 pycfdns==1.2.1
 pychannels==1.0.0
@@ -679,7 +679,7 @@ pycryptodomex==3.10.1
 pycsspeechtts==1.0.4
 pydaikin==2.4.1
 pydanfossair==0.1.0
-pydantic==1.8.1
+pydantic==1.8.2
 pydeconz==79
 pydelijn==0.6.1
 pydexcom==0.2.0
@@ -700,7 +700,7 @@ pyflunearyou==1.0.7
 pyfnip==0.2
 pyforked-daapd==0.1.11
 pyfritzhome==0.4.2
-pyftdi==0.52.9
+pyftdi==0.53.1
 pyfttt==0.3
 pygatt==4.0.5
 pygtfs==0.1.5
@@ -809,7 +809,7 @@ pysmi==0.3.4
 pysml==0.0.5
 pysnmp==4.4.12
 pysoma==0.0.10
-pysonos==0.0.44
+pysonos==0.0.45
 pyspcwebgw==0.4.0
 pysqueezebox==0.5.5
 pystiebeleltron==0.0.1.dev2
