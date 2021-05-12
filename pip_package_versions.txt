@@ -74,7 +74,7 @@ WSDiscovery==2.0.0
 WazeRouteCalculator==0.12
 Werkzeug==2.0.0
 XBee==2.3.2
-XlsxWriter==1.4.2
+XlsxWriter==1.4.3
 abodepy==1.2.0
 accuweather==0.1.1
 acme==1.13.0
@@ -118,7 +118,7 @@ aioharmony==0.2.7
 aiohomekit==0.2.61
 aiohttp-cors==0.7.0
 aiohttp==3.7.4.post0
-aiohue==2.3.0
+aiohue==2.3.1
 aioimaplib==0.7.15
 aioitertools==0.7.1
 aiokafka==0.6.0
@@ -276,7 +276,7 @@ deepmerge==0.3.0
 defusedxml==0.6.0
 deluge-client==1.7.1
 demjson==2.2.4
-denonavr==0.10.7
+denonavr==0.10.8
 devolo-home-control-api==0.17.3
 dicttoxml==1.7.4
 directv==0.4.0
@@ -400,7 +400,7 @@ hole==0.5.1
 holidays==0.11.1
 home-assistant-frontend==20210504.0
 homeassistant-pyozw==0.1.10
-homeassistant==2021.5.2
+homeassistant==2021.5.3
 homeconnect==0.6.3
 homematicip==0.13.1
 homepluscontrol==0.0.5
@@ -527,7 +527,7 @@ mysqlclient==2.0.3
 n26==0.2.7
 nad-receiver==0.0.12
 natsort==7.1.1
-nclib==1.0.0
+nclib==1.0.1
 ndms2-client==0.1.1
 nessclient==0.9.15
 netaddr==0.8.0
