@@ -271,7 +271,7 @@ datapoint==0.9.5
 dateparser==1.0.0
 dbus-next==0.2.2
 debugpy==1.2.1
-decorator==5.0.7
+decorator==5.0.8
 deepmerge==0.3.0
 defusedxml==0.6.0
 deluge-client==1.7.1
@@ -832,7 +832,7 @@ python-dateutil==2.8.1
 python-didl-lite==1.2.6
 python-digitalocean==1.13.2
 python-ecobee-api==0.2.11
-python-engineio==4.1.0
+python-engineio==4.2.0
 python-etherscan-api==0.0.3
 python-family-hub-local==0.0.2
 python-forecastio==1.4.0
@@ -860,7 +860,7 @@ python-singleton==0.1.2
 python-slugify==4.0.1
 python-smarttub==0.0.24
 python-sochain-api==0.0.2
-python-socketio==5.2.1
+python-socketio==5.3.0
 python-songpal==0.12
 python-tado==0.10.0
 python-telegram-bot==13.1
