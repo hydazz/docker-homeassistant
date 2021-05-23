@@ -1,8 +1,8 @@
 AEMET-OpenData==0.1.8
 APScheduler==3.6.3
-Adafruit-Blinka==6.9.1
+Adafruit-Blinka==6.9.2
 Adafruit-GPIO==1.0.3
-Adafruit-PlatformDetect==3.13.1
+Adafruit-PlatformDetect==3.13.2
 Adafruit-PureIO==1.1.8
 Adafruit-SHT31==1.0.2
 Ambiclimate==0.2.1
@@ -17,7 +17,7 @@ DTLSSocket==0.1.12
 DateTime==4.3
 Deprecated==1.2.12
 DoorBirdPy==2.1.0
-Flask==2.0.0
+Flask==2.0.1
 HAP-python==3.4.1
 HATasmota==0.2.13
 Hydrawiser==0.2
@@ -67,7 +67,7 @@ Rx==3.2.0
 SQLAlchemy==1.4.13
 SecretStorage==3.3.1
 SmartHab==0.21
-Sphinx==4.0.1
+Sphinx==4.0.2
 TravisPy==0.3.5
 TwitterAPI==2.7.2
 WSDiscovery==2.0.0
@@ -354,7 +354,7 @@ glances-api==0.2.0
 gntp==1.0.3
 goalzero==0.1.4
 gogogate2-api==3.0.0
-google-api-core==1.27.0
+google-api-core==1.28.0
 google-api-python-client==1.6.4
 google-auth-oauthlib==0.4.4
 google-auth==1.30.0
@@ -425,7 +425,7 @@ ibm-cloud-sdk-core==1.0.0
 ibm-watson==4.0.1
 ibmiotf==0.3.4
 icmplib==2.1.1
-identify==2.2.4
+identify==2.2.5
 idna==2.10
 ifaddr==0.1.7
 iglo==1.2.7
@@ -977,10 +977,10 @@ speak2mary==1.4.0
 speedtest-cli==2.1.3
 sphinxcontrib-applehelp==1.0.2
 sphinxcontrib-devhelp==1.0.2
-sphinxcontrib-htmlhelp==1.0.3
+sphinxcontrib-htmlhelp==2.0.0
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
-sphinxcontrib-serializinghtml==1.1.4
+sphinxcontrib-serializinghtml==1.1.5
 spiderpy==1.4.2
 spidev==3.5
 spinners==0.0.24
