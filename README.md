@@ -4,7 +4,7 @@
 
 **This is an unofficial image that has been modified for my own needs. If my needs match your needs, feel free to use this image at your own risk.**
 
-Fork of [linuxserver/docker-homeassistant](https://github.com/linuxserver/docker-homeassistant/).
+Fork of [linuxserver/docker-homeassistant](https://github.com/linuxserver/docker-homeassistant/). (Equivalent to 2021.6.0-ls24)
 
 [Home Assistant](https://www.home-assistant.io/) is open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.
 
