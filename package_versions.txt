@@ -14,7 +14,7 @@ curl-7.77.0-r0
 dbus-1.12.20-r2
 dbus-libs-1.12.20-r2
 eudev-libs-3.2.10-r0
-expat-2.3.0-r0
+expat-2.4.1-r0
 ffmpeg-4.4-r0
 ffmpeg-libs-4.4-r0
 fontconfig-2.13.1-r4
@@ -107,7 +107,7 @@ py3-contextlib2-0.6.0-r1
 py3-distlib-0.3.1-r3
 py3-distro-1.5.0-r3
 py3-html5lib-1.1-r1
-py3-idna-3.1-r1
+py3-idna-3.2-r0
 py3-lockfile-0.12.2-r4
 py3-msgpack-1.0.2-r1
 py3-ordered-set-4.0.2-r1
@@ -121,7 +121,7 @@ py3-retrying-1.3.3-r1
 py3-setuptools-52.0.0-r3
 py3-six-1.15.0-r1
 py3-toml-0.10.2-r2
-py3-urllib3-1.26.4-r1
+py3-urllib3-1.26.5-r0
 py3-webencodings-0.5.1-r4
 python3-3.8.10-r0
 readline-8.1.0-r0
