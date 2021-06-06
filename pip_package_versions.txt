@@ -6,7 +6,7 @@ Adafruit-PlatformDetect==3.13.3
 Adafruit-PureIO==1.1.8
 Adafruit-SHT31==1.0.2
 Ambiclimate==0.2.1
-Authlib==0.15.3
+Authlib==0.15.4
 Babel==2.9.1
 BlinkStick==1.1.8
 Brotli==1.0.9
@@ -861,7 +861,7 @@ python-hpilo==4.3
 python-http-client==3.3.2
 python-izone==1.1.4
 python-join-api==0.0.6
-python-jose==3.2.0
+python-jose==3.3.0
 python-juicenet==1.0.2
 python-jwt==3.3.0
 python-magic==0.4.24
@@ -1061,7 +1061,7 @@ twilio==6.32.0
 twinkly-client==0.0.2
 typer==0.3.2
 typing-extensions==3.10.0.0
-typing-inspect==0.6.0
+typing-inspect==0.7.0
 tzlocal==2.0.0
 uEagle==0.0.2
 uamqp==1.4.0
