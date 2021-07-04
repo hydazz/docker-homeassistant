@@ -8,8 +8,8 @@ LABEL build_version="Home Assistant version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
-	PYTHONPATH="/pip-packages:$PYTHONPATH"
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ --find-links https://wheels.home-assistant.io/alpine-3.12/amd64/" \
+	PYTHONPATH="${PYTHONPATH}:/pip-packages"
 
 # copy local files
 COPY root/ /
@@ -65,8 +65,7 @@ RUN set -xe && \
 	pip install --target /pip-packages --no-cache-dir --upgrade \
 		distlib && \
 	pip install --no-cache-dir --upgrade \
-		pip==20.3 \
-		setuptools \
+		pip==20.2 \
 		wheel && \
 	pip install ${PIPFLAGS} \
 		homeassistant==${VERSION} && \
@@ -75,21 +74,6 @@ RUN set -xe && \
 		-r requirements_all.txt && \
 	pip install ${PIPFLAGS} \
 		-r https://raw.githubusercontent.com/home-assistant/docker/${HASS_BASE}/requirements.txt && \
-	echo "**** install dependencies for hacs.xyz ****" && \
-	if [ -z ${HACS_RELEASE+x} ]; then \
-		HACS_RELEASE=$(curl -sL "https://api.github.com/repos/hacs/integration/releases/latest" | \
-			awk '/tag_name/{print $4;exit}' FS='[""]'); \
-	fi && \
-	mkdir -p \
-		/tmp/hacs-source && \
-	curl -o \
-		/tmp/hacs.tar.gz -L \
-		"https://github.com/hacs/integration/archive/${HACS_RELEASE}.tar.gz" && \
-	tar xf \
-		/tmp/hacs.tar.gz -C \
-		/tmp/hacs-source --strip-components=1 && \
-	pip install ${PIPFLAGS} \
-		-r /tmp/hacs-source/requirements.txt && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
 		build-dependencies && \
