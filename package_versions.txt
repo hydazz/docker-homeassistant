@@ -1,4 +1,4 @@
-alpine-baselayout-3.2.0-r15
+alpine-baselayout-3.2.0-r17
 alpine-keys-2.3-r1
 alsa-lib-1.2.5.1-r0
 aom-libs-1.0.0-r3
@@ -6,7 +6,7 @@ apk-tools-2.12.5-r1
 bash-5.1.8-r0
 bluez-deprecated-5.58-r2
 brotli-libs-1.0.9-r5
-busybox-1.33.1-r2
+busybox-1.33.1-r4
 ca-certificates-20191127-r5
 ca-certificates-bundle-20191127-r5
 coreutils-8.32-r2
@@ -15,8 +15,8 @@ dbus-1.12.20-r2
 dbus-libs-1.12.20-r2
 eudev-libs-3.2.10-r1
 expat-2.4.1-r0
-ffmpeg-4.4-r2
-ffmpeg-libs-4.4-r2
+ffmpeg-4.4-r3
+ffmpeg-libs-4.4-r3
 fontconfig-2.13.1-r4
 freetype-2.10.4-r1
 fribidi-1.0.10-r0
@@ -31,7 +31,7 @@ lame-3.100-r0
 libacl-2.2.53-r0
 libass-0.15.1-r0
 libattr-2.5.1-r0
-libblkid-2.37-r2
+libblkid-2.37-r3
 libbsd-0.11.3-r0
 libbz2-1.0.8-r1
 libc-utils-0.7.2-r3
@@ -39,7 +39,7 @@ libcap-2.51-r0
 libcrypto1.1-1.1.1k-r1
 libcurl-7.77.0-r1
 libdav1d-0.9.0-r0
-libdrm-2.4.106-r0
+libdrm-2.4.107-r0
 libedit-20210216.3.1-r0
 libffi-3.3-r2
 libgcc-10.3.1_git20210625-r0
@@ -50,13 +50,13 @@ libintl-0.21-r0
 libjpeg-turbo-2.1.0-r0
 libldap-2.4.59-r0
 libmd-1.0.3-r0
-libmount-2.37-r2
+libmount-2.37-r3
 libogg-1.3.5-r0
 libpciaccess-0.16-r0
 libpng-1.6.37-r1
 libpq-13.3-r0
 libproc-3.3.17-r0
-libretls-3.3.3-r0
+libretls-3.3.3-r2
 libsasl-2.1.27-r12
 libsrt-1.4.2-r0
 libssh-0.9.5-r0
@@ -65,7 +65,7 @@ libstdc++-10.3.1_git20210625-r0
 libtasn1-4.17.0-r0
 libtheora-1.1.1-r16
 libunistring-0.9.10-r1
-libuuid-2.37-r2
+libuuid-2.37-r3
 libva-2.12.0-r0
 libvdpau-1.4-r0
 libvorbis-1.3.7-r0
@@ -84,8 +84,8 @@ mariadb-connector-c-3.1.13-r0
 mariadb-connector-c-dev-3.1.13-r0
 musl-1.2.2-r3
 musl-utils-1.2.2-r3
-ncurses-libs-6.2_p20210619-r0
-ncurses-terminfo-base-6.2_p20210619-r0
+ncurses-libs-6.2_p20210626-r0
+ncurses-terminfo-base-6.2_p20210626-r0
 nettle-3.7.3-r0
 nghttp2-libs-1.43.0-r0
 openssh-client-common-8.6_p1-r2
@@ -104,7 +104,7 @@ py3-cachecontrol-0.12.6-r1
 py3-certifi-2020.12.5-r1
 py3-chardet-4.0.0-r2
 py3-colorama-0.4.4-r1
-py3-contextlib2-0.6.0-r1
+py3-contextlib2-21.6.0-r0
 py3-distlib-0.3.1-r3
 py3-distro-1.5.0-r3
 py3-html5lib-1.1-r1
@@ -122,7 +122,7 @@ py3-retrying-1.3.3-r1
 py3-setuptools-52.0.0-r3
 py3-six-1.15.0-r1
 py3-toml-0.10.2-r2
-py3-urllib3-1.26.5-r0
+py3-urllib3-1.26.6-r0
 py3-webencodings-0.5.1-r4
 python3-3.8.10-r0
 readline-8.1.0-r0
@@ -133,7 +133,7 @@ shadow-4.8.1-r0
 skalibs-2.10.0.3-r0
 soxr-0.1.3-r2
 sqlite-libs-3.35.5-r0
-ssl_client-1.33.1-r2
+ssl_client-1.33.1-r4
 tiff-4.2.0-r1
 tzdata-2021a-r0
 utmps-0.1.0.2-r0

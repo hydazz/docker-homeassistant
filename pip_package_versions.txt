@@ -1,8 +1,8 @@
 AEMET-OpenData==0.2.1
 APScheduler==3.6.3
-Adafruit-Blinka==6.10.2
+Adafruit-Blinka==6.10.3
 Adafruit-GPIO==1.0.3
-Adafruit-PlatformDetect==3.14.1
+Adafruit-PlatformDetect==3.14.2
 Adafruit-PureIO==1.1.9
 Adafruit-SHT31==1.0.2
 Ambiclimate==0.2.1
@@ -167,7 +167,7 @@ asmog==0.0.6
 asterisk-mbox==0.5.0
 astpath==0.6.1
 astral==2.2
-astroid==2.5.6
+astroid==2.6.2
 async-generator==1.10
 async-timeout==3.0.1
 async-upnp-client==0.18.0
@@ -189,7 +189,7 @@ av==8.0.3
 awesomeversion==21.4.0
 axis==44
 azure-common==1.1.27
-azure-core==1.15.0
+azure-core==1.16.0
 azure-eventhub==5.1.0
 azure-servicebus==0.50.3
 backoff==1.10.0
@@ -361,7 +361,7 @@ goalzero==0.1.7
 google-api-core==1.30.0
 google-api-python-client==1.6.4
 google-auth-oauthlib==0.4.4
-google-auth==1.32.0
+google-auth==1.32.1
 google-cloud-pubsub==2.1.0
 google-cloud-texttospeech==0.4.0
 google-nest-sdm==0.2.12
@@ -404,7 +404,7 @@ hole==0.5.1
 holidays==0.11.1
 home-assistant-frontend==20210603.0
 homeassistant-pyozw==0.1.10
-homeassistant==2021.6.6
+homeassistant==2021.6.5
 homeconnect==0.6.3
 homematicip==0.13.1
 homepluscontrol==0.0.5
@@ -436,7 +436,7 @@ iglo==1.2.7
 ihcsdk==2.7.0
 imageio==2.9.0
 imagesize==1.2.0
-importlib-metadata==4.5.0
+importlib-metadata==4.6.0
 incomfort-client==0.4.4
 inflection==0.5.1
 influxdb-client==1.14.0
@@ -576,7 +576,7 @@ oru==0.1.11
 orvibo==1.1.1
 ovoenergy==1.1.12
 oyaml==1.0
-packaging==20.9
+packaging==21.0
 paho-mqtt==1.5.1
 panacotta==0.1
 panasonic-viera==0.3.6
@@ -615,13 +615,13 @@ pre-commit==2.13.0
 prettytable==2.1.0
 proliphix==0.4.1
 prometheus-client==0.7.1
-proto-plus==1.18.1
+proto-plus==1.19.0
 protobuf==3.17.3
 proxmoxer==1.1.1
 psutil==5.8.0
 psycopg2==2.8.6
 ptyprocess==0.7.0
-pubnub==5.1.3
+pubnub==5.1.4
 pubnubsub-handler==1.0.9
 pulsectl==20.2.4
 pure-pcapy3==1.0.1
@@ -648,7 +648,7 @@ pyHS100==0.3.5.2
 pyHik==0.2.8
 pyOpenSSL==20.0.1
 pyRFC3339==1.1
-pyRFXtrx==0.27.0
+pyRFXtrx==0.26.1
 pySDCP==1
 pyTibber==0.17.0
 pyW215==0.7.0
@@ -685,7 +685,7 @@ pycparser==2.20
 pycryptodome==3.10.1
 pycryptodomex==3.10.1
 pycsspeechtts==1.0.4
-pydaikin==2.4.3
+pydaikin==2.4.2
 pydanfossair==0.1.0
 pydantic==1.8.2
 pydeconz==79
@@ -741,7 +741,7 @@ pylast==4.2.0
 pylaunches==1.0.0
 pylgnetcast==0.3.3
 pylibrespot-java==0.1.0
-pylint==2.8.3
+pylint==2.9.3
 pylitejet==0.3.0
 pylitterbot==2021.3.1
 pyloopenergy==0.2.1
@@ -806,7 +806,7 @@ pyroute2.ndb==0.6.4
 pyroute2.nftables==0.6.4
 pyroute2.nslink==0.6.4
 pyroute2==0.6.4
-pyrsistent==0.17.3
+pyrsistent==0.18.0
 pyruckus==0.12
 pysabnzbd==1.1.0
 pysaj==0.0.16
@@ -838,7 +838,7 @@ pytautulli==0.5.0
 pytest-asyncio==0.15.1
 pytest-cov==2.12.1
 pytest-mock==3.6.1
-pytest-rerunfailures==10.0
+pytest-rerunfailures==10.1
 pytest-runner==5.3.1
 pytest-socket==0.4.0
 pytest==6.2.4
@@ -920,7 +920,7 @@ raspyrfm-client==1.2.8
 ratelimit==2.2.1
 readlike==0.1.2
 regenmaschine==3.0.0
-regex==2021.4.4
+regex==2021.7.1
 repoze.lru==0.7
 requests-file==1.5.1
 requests-futures==1.0.0
@@ -1064,7 +1064,7 @@ typing-extensions==3.10.0.0
 typing-inspect==0.7.1
 tzlocal==2.0.0
 uEagle==0.0.2
-uamqp==1.4.0
+uamqp==1.4.1
 ujson==1.35
 unasync==0.5.0
 unifiled==0.11
@@ -1134,7 +1134,7 @@ zigpy-xbee==0.13.0
 zigpy-zigate==0.7.3
 zigpy-znp==0.5.1
 zigpy==0.33.0
-zipp==3.4.1
+zipp==3.5.0
 zm-py==0.5.2
 zope.interface==5.4.0
 zwave-js-server-python==0.26.1
