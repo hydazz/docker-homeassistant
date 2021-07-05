@@ -398,7 +398,7 @@ hole==0.5.1
 holidays==0.11.1
 home-assistant-frontend==20210603.0
 homeassistant-pyozw==0.1.10
-homeassistant==2021.6.5
+homeassistant==2021.6.6
 homeconnect==0.6.3
 homematicip==0.13.1
 homepluscontrol==0.0.5
@@ -430,7 +430,7 @@ iglo==1.2.7
 ihcsdk==2.7.0
 imageio==2.9.0
 imagesize==1.2.0
-importlib-metadata==4.6.0
+importlib-metadata==4.6.1
 incomfort-client==0.4.4
 inflection==0.5.1
 influxdb-client==1.14.0
@@ -642,7 +642,7 @@ pyHS100==0.3.5.2
 pyHik==0.2.8
 pyOpenSSL==20.0.1
 pyRFC3339==1.1
-pyRFXtrx==0.26.1
+pyRFXtrx==0.27.0
 pySDCP==1
 pyTibber==0.17.0
 pyW215==0.7.0
@@ -679,7 +679,7 @@ pycparser==2.20
 pycryptodome==3.10.1
 pycryptodomex==3.10.1
 pycsspeechtts==1.0.4
-pydaikin==2.4.2
+pydaikin==2.4.3
 pydanfossair==0.1.0
 pydantic==1.8.2
 pydeconz==79
