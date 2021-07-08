@@ -4,7 +4,7 @@ alsa-lib-1.2.5.1-r1
 aom-libs-1.0.0-r3
 apk-tools-2.12.5-r1
 bash-5.1.8-r0
-bluez-deprecated-5.58-r3
+bluez-deprecated-5.60-r0
 brotli-libs-1.0.9-r5
 busybox-1.33.1-r4
 ca-certificates-20191127-r5
