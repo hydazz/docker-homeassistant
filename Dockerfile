@@ -66,6 +66,7 @@ RUN set -xe && \
 		distlib && \
 	pip install --no-cache-dir --upgrade \
 		pip==20.2 \
+		setuptools \
 		wheel && \
 	pip install ${PIPFLAGS} \
 		homeassistant==${VERSION} && \
