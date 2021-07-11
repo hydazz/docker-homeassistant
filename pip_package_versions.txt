@@ -233,7 +233,7 @@ cattrs==1.7.1
 cbor2==5.4.0
 cchardet==2.1.7
 certifi==2021.5.30
-cffi==1.14.5
+cffi==1.14.6
 cfgv==3.3.0
 chardet==4.0.0
 circuit-webhook==1.0.1
@@ -359,7 +359,7 @@ gitterpy==0.1.7
 glances-api==0.2.0
 gntp==1.0.3
 goalzero==0.1.7
-google-api-core==1.30.0
+google-api-core==1.31.0
 google-api-python-client==1.6.4
 google-auth-oauthlib==0.4.4
 google-auth==1.32.1
@@ -429,7 +429,7 @@ ibm-cloud-sdk-core==3.10.1
 ibm-watson==5.1.0
 ibmiotf==0.3.4
 icmplib==3.0
-identify==2.2.10
+identify==2.2.11
 idna==2.10
 ifaddr==0.1.7
 iglo==1.2.7
@@ -449,7 +449,7 @@ iso8601==0.1.14
 isodate==0.6.0
 isort==5.9.2
 itsdangerous==2.0.1
-jeepney==0.6.0
+jeepney==0.7.0
 jmespath==0.10.0
 josepy==1.8.0
 jsonpatch==1.32
@@ -964,7 +964,7 @@ sharkiqpy==0.1.8
 sharp-aquos-rc==0.3.2
 shodan==1.25.0
 simplehound==0.3
-simplejson==3.17.2
+simplejson==3.17.3
 simplepush==1.1.4
 simplisafe-python==11.0.1
 sisyphus-control==3.0
