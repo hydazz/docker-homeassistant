@@ -1,8 +1,8 @@
 AEMET-OpenData==0.2.1
 APScheduler==3.6.3
-Adafruit-Blinka==6.10.3
+Adafruit-Blinka==6.11.1
 Adafruit-GPIO==1.0.3
-Adafruit-PlatformDetect==3.14.2
+Adafruit-PlatformDetect==3.15.3
 Adafruit-PureIO==1.1.9
 Adafruit-SHT31==1.0.2
 Ambiclimate==0.2.1
@@ -12,7 +12,7 @@ BlinkStick==1.1.8
 Brotli==1.0.9
 CO2Signal==0.4.2
 ConfigArgParse==1.5.1
-Cython==0.29.23
+Cython==0.29.24
 DTLSSocket==0.1.12
 DateTime==4.3
 Deprecated==1.2.12
@@ -67,7 +67,7 @@ Rx==3.2.0
 SQLAlchemy==1.4.17
 SecretStorage==3.3.1
 SmartHab==0.21
-Sphinx==4.1.0
+Sphinx==4.1.1
 TravisPy==0.3.5
 TwitterAPI==2.7.3
 WSDiscovery==2.0.0
@@ -171,7 +171,7 @@ async-timeout==3.0.1
 async-upnp-client==0.19.0
 asynccmd==0.2.4
 asyncio-dgram==1.2.0
-asyncio-mqtt==0.9.1
+asyncio-mqtt==0.10.0
 asyncio==3.4.3
 asyncpysupla==0.0.5
 asyncssh==2.7.0
@@ -179,6 +179,7 @@ asyncstdlib==3.9.2
 atenpdu==0.3.0
 atomicwrites==1.4.0
 attrs==21.2.0
+audio-metadata==0.11.1
 auroranoaa==0.0.2
 aurorapy==0.2.6
 authcaptureproxy==1.0.1
@@ -189,7 +190,8 @@ azure-common==1.1.27
 azure-core==1.16.0
 azure-eventhub==5.5.0
 azure-servicebus==0.50.3
-backoff==1.11.0
+backoff==1.11.1
+backports.entry-points-selectable==1.1.0
 backports.zoneinfo==0.2.1
 baidu-aip==1.6.6.0
 base36==0.1.1
@@ -200,7 +202,9 @@ beautifulsoup4==4.9.3
 bellows==0.25.0
 bidict==0.21.2
 bimmer-connected==0.7.15
+bitarray==2.2.2
 bitstring==3.1.7
+bitstruct==8.11.1
 bizkaibus==0.1.1
 bleak==0.12.1
 blebox-uniapi==1.3.3
@@ -361,7 +365,7 @@ goalzero==0.1.7
 google-api-core==1.31.0
 google-api-python-client==1.6.4
 google-auth-oauthlib==0.4.4
-google-auth==1.32.1
+google-auth==1.33.0
 google-cloud-pubsub==2.1.0
 google-cloud-texttospeech==0.4.0
 google-nest-sdm==0.2.12
@@ -371,7 +375,7 @@ goslide-api==0.5.1
 gpiozero==1.5.1
 gps3==0.33.3
 graphql-subscription-manager==0.4.0
-graphviz==0.16
+graphviz==0.17
 greeclimate==0.11.7
 greeneye-monitor==2.1
 greenlet==1.1.0
@@ -403,7 +407,7 @@ hole==0.5.1
 holidays==0.11.1
 home-assistant-frontend==20210707.0
 homeassistant-pyozw==0.1.10
-homeassistant==2021.7.2
+homeassistant==2021.7.3
 homeconnect==0.6.3
 homematicip==0.13.1
 homepluscontrol==0.0.5
@@ -444,7 +448,7 @@ iniconfig==1.1.1
 intelhex==2.3.0
 iperf3==0.1.11
 ismartgate==4.0.0
-iso8601==0.1.14
+iso8601==0.1.16
 isodate==0.6.0
 isort==5.9.2
 itsdangerous==2.0.1
@@ -515,9 +519,11 @@ mficlient==0.3.0
 micloud==0.3
 miflora==0.7.0
 millheater==0.5.0
+miniaudio==1.44
 minio==4.0.9
 mitemp-bt==0.0.3
 mock==4.0.3
+more-itertools==8.8.0
 motionblinds==0.4.10
 motioneye-client==0.3.6
 ms-cv==0.1.1
@@ -589,6 +595,7 @@ pbr==5.6.0
 pcal9535a==0.7
 pdunehd==1.3.2
 pencompy==0.0.3
+pendulum==2.1.2
 pexpect==4.6.0
 pi1wire==0.1.0
 pi4ioe5v9xxxx==0.0.2
@@ -599,6 +606,7 @@ pigpio==1.78
 pilight==0.1.1
 pizzapi==0.0.3
 pkce==1.0.3
+platformdirs==2.0.2
 plexauth==0.0.6
 plexwebsocket==0.0.13
 pluggy==0.13.1
@@ -665,7 +673,7 @@ pyasn1-modules==0.2.8
 pyasn1==0.4.8
 pyatag==0.3.5.3
 pyatmo==5.2.0
-pyatv==0.7.7
+pyatv==0.8.1
 pybbox==0.0.5a0
 pyblackbird==0.5
 pybotvac==0.0.21
@@ -702,7 +710,7 @@ pyephember==0.3.1
 pyeverlights==0.1.0
 pyezviz==0.1.8.9
 pyfido==2.1.1
-pyfireservicerota==0.0.42
+pyfireservicerota==0.0.43
 pyflexit==0.3
 pyflic==2.0.3
 pyflunearyou==1.0.7
@@ -722,7 +730,7 @@ pyhomematic==0.1.73
 pyhomeworks==0.0.6
 pyialarm==1.9.0
 pyicloud==0.10.2
-pyinsteon==1.0.11
+pyinsteon==1.0.12
 pyintesishome==1.7.6
 pyipma==2.0.5
 pyipp==0.11.0
@@ -784,7 +792,7 @@ pyowm==3.2.0
 pyownet==0.10.0.post1
 pyparsing==2.4.7
 pypca==0.0.7
-pypck==0.7.9
+pypck==0.7.10
 pypjlink2==1.2.1
 pyplaato==0.0.15
 pypoint==2.1.0
@@ -794,7 +802,7 @@ pyquery==1.4.3
 pyqvrpro==0.52
 pyqwikswitch==0.93
 pyrail==0.0.3
-pyrainbird==0.4.2
+pyrainbird==0.4.3
 pyrecswitch==1.0.2
 pyrepetier==3.0.5
 pyrisco==0.3.1
@@ -819,7 +827,7 @@ pysha3==1.0.2
 pysiaalarm==3.0.0
 pysignalclirestapi==0.3.4
 pyskyqhub==0.1.3
-pysma==0.6.2
+pysma==0.6.4
 pysmappee==0.2.25
 pysmartapp==0.3.3
 pysmartthings==0.7.6
@@ -846,7 +854,7 @@ pythinkingcleaner==0.0.3
 python-awair==0.2.1
 python-blockchain-api==0.0.2
 python-clementine-remote==1.0.1
-python-dateutil==2.8.1
+python-dateutil==2.8.2
 python-didl-lite==1.2.6
 python-digitalocean==1.13.2
 python-ecobee-api==0.2.11
@@ -896,6 +904,7 @@ pytrackr==0.0.5
 pytradfri==7.0.6
 pytrafikverket==0.1.6.2
 pytz==2021.1
+pytzdata==2020.1
 pyuptimerobot==0.0.5
 pyusb==1.0.0b1
 pyvera==0.3.13
@@ -1029,6 +1038,7 @@ tahoma-api==0.0.16
 tailer==0.4.1
 tank-utility==1.4.0
 tapsaff==0.2.1
+tbm-utils==2.6.0
 tellcore-net==0.4
 tellcore-py==1.1.2
 tellduslive==0.10.11
@@ -1082,7 +1092,7 @@ vallox-websocket-api==2.4.0
 venstarcolortouch==0.14
 vilfo-api-client==0.3.2
 vincenty==0.1.4
-virtualenv==20.4.7
+virtualenv==20.6.0
 vobject==0.9.6.1
 vol==0.1.1
 volkszaehler==0.2.1
