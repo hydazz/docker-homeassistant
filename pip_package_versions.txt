@@ -1,6 +1,6 @@
 AEMET-OpenData==0.2.1
 APScheduler==3.6.3
-Adafruit-Blinka==6.11.1
+Adafruit-Blinka==6.12.0
 Adafruit-GPIO==1.0.3
 Adafruit-PlatformDetect==3.15.3
 Adafruit-PureIO==1.1.9
@@ -203,7 +203,7 @@ bellows==0.25.0
 bidict==0.21.2
 bimmer-connected==0.7.15
 bitarray==2.2.2
-bitstring==3.1.7
+bitstring==3.1.8
 bitstruct==8.11.1
 bizkaibus==0.1.1
 bleak==0.12.1
